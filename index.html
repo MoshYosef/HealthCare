@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>stocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        window.onload = function () {
+            const d = new Date();
+            document.getElementById("date1").innerHTML = d.toDateString();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>health care</h1>
+    <p id="date1"></p>
+    <div>
+        <table>
+            <tr class="table-header">
+                <th>stock name</th>
+                <th>logo</th>
+                <th>price</th>
+                <th>ticker simbol</th>
+            </tr>
+            <tr>
+                <td class="pfizer"><a href="https://www.pfizer.com/" target="_blank">Pfizer</a></td>
+                <td><img src="./img/pfe-logo.png" alt="phizer logo" width="100"></td>
+                <td>$44.14
+                    <br><a href="https://finance.yahoo.com/quote/PFE/" target="_blank">see current price</a>
+                </td>
+                <td>PFE</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.merck.com/" target="_blank">Merck</a></td>
+                <td><img src="./img/mrk-logo.png" alt="merc & co logo" width="100"></td>
+                <td>$94.36
+                    <br><a href="https://finance.yahoo.com/quote/MRK/" target="_blank">see current price</a>
+                </td>
+                <td>MRK</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.uhc.com/" target="_blank">UnitedHealth Group</a></td>
+                <td><img src="./img/unh-logo.png" alt="united health care logo" width="100"></td>
+                <td>$515.51
+                    <br><a href="https://finance.yahoo.com/quote/UNH/" target="_blank">see current price</a>
+                </td>
+                <td>UNH</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.molinahealthcare.com/
+                    " target="_blank">Molina Healthcare</a></td>
+                <td><img src="./img/moh-logo.png" alt="Molina Healthcare logo" width="100"></td>
+                <td>$339.33
+                    <br><a href="https://finance.yahoo.com/quote/MOH/" target="_blank">see current price</a>
+                </td>
+                <td>MOH</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.avantorsciences.com/site/" target="_blank">Avantor </a></td>
+                <td><img src="./img/avtr-logo.png" alt="Avantor logo" width="100"></td>
+                <td>$20.21
+                    <br><a href="https://finance.yahoo.com/quote/AVTR/" target="_blank">see current price</a>
+                </td>
+                <td>AVTR</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.centene.com/" target="_blank">Centene</a></td>
+                <td><img src="./img/cnc-logo.png" alt="centene logo" width="100"></td>
+                <td>$79.33
+                    <br><a href="https://finance.yahoo.com/quote/CNC/" target="_blank">see current price</a>
+                </td>
+                <td>CNC</td>
+            </tr>
+        </table>
+        <button id="button-buy" onclick="buyFunction()">buy</button>
+        <button  id="button-sell">sell</button>
+    </div>
+
+
+    <p id="demo"></p>
+  
+
+
+
+</body>
+
+</html>
